@@ -82,21 +82,21 @@ class Models:
 
     # Blip Model
     def modelBlip():
-        if op.exists('models/custom/blip/model__base_caption.pth'):
+        if op.exists('models/blip/model__base_caption.pth'):
             return st.write(f"Blip Model already exists !")
         else:
             # return st.write(f"Blip Model is to be installed !")
-            os.mkdir("models/custom/blip")
-            os.system("curl -o models/custom/blip/model__base_caption.pth -L https://huggingface.co/kaliansh/sdrep/resolve/main/model__base_caption.pth")
+            os.mkdir("models/blip")
+            os.system("curl -o models/blip/model__base_caption.pth -L https://huggingface.co/kaliansh/sdrep/resolve/main/model__base_caption.pth")
             return st.write(f"Blip model successfully installed")
 
     # Waifu Diffusion v1.3
     def modelWD():
-        if op.exists("models/custom/waifu-V1-3.ckpt"):
+        if op.exists("models/custom/WaifuDiffusion-V1.3.ckpt"):
             return st.write(f"Waifu Diffusion Model already exists !")
         else:
             os.system(
-                "curl -L https://huggingface.co/hakurei/waifu-diffusion-v1-3/resolve/main/wd-v1-3-full.ckpt -o models/custom/waifu-V1-3.ckpt")
+                "curl -L https://huggingface.co/hakurei/waifu-diffusion-v1-3/resolve/main/wd-v1-3-full.ckpt -o models/custom/WaifuDiffusion-V1.3.ckpt")
             return st.write(f"Waifu Diffusion model successfully installed")
 
     # Waifu Diffusion v1.2 Pruned
