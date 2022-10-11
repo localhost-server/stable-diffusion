@@ -19,8 +19,13 @@
 import os
 # from scripts.modeldnld import Models
 
+<<<<<<< Updated upstream
 # os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 # device = "cuda" #torch.device("cuda:0")
+=======
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+device = "cuda" #torch.device("cuda:0")
+>>>>>>> Stashed changes
 
 # os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 # device = "cuda" #torch.device("cuda:0")
