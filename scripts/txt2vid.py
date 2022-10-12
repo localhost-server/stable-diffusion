@@ -268,7 +268,7 @@ def load_diffusers_model(weights_path,torch_device):
 		)
 		raise OSError("You need a huggingface token in order to use the Text to Video tab. Use the Settings page from the sidebar on the left to add your token.")
 #
-def save_video_to_disk(frames, seeds, sanitized_prompt, fps=6,save_video=True, outdir='outputs'):
+def save_video_to_disk(frames, seeds, sanitized_prompt, fps=10,save_video=True, outdir='outputs'):
 	if save_video:
 		# write video to memory
 		#output = io.BytesIO()
