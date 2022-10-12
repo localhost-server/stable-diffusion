@@ -9,11 +9,15 @@ torchaudio
 # See: https://github.com/CompVis/taming-transformers/issues/176
 # -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers # required by ldm
 # Note: taming package needs to be installed with -e option
+-e git+https://github.com/CompVis/taming-transformers#egg=taming-transformers
+invisible-watermark==0.1.5
+taming-transformers-rom1504==0.0.6  # required by ldm
 
+# Note: K-diffusion brings in CLIP 1.0 as a dependency automatically; will create a dependency resolution conflict when explicitly specified together
+git+https://github.com/openai/CLIP.git@main#egg=clip
 
 git+https://github.com/crowsonkb/k-diffusion.git
-# Note: K-diffusion brings in CLIP 1.0 as a dependency automatically; will create a dependency resolution conflict when explicitly specified together
-# git+https://github.com/openai/CLIP.git@main#egg=clip
+# git+https://github.com/hlky/k-diffusion-sd#egg=k_diffusion
 
 # Dependencies required for Stable Diffusion UI
 pynvml==11.4.1
@@ -83,6 +87,9 @@ git+https://github.com/CompVis/latent-diffusion
 ## for monocular depth estimation 
 tensorflow==2.10.0
 
+# Unused Packages: No current usage but will be used in the future.
+
 
 # Orphaned Packages:  No usage found
+
 
