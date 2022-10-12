@@ -78,11 +78,11 @@ basicsr==1.4.2  # required by RealESRGAN
 gfpgan==1.3.8  # GFPGAN
 # -e git+https://github.com/TencentARC/GFPGAN.git#egg=GFPGAN
 realesrgan==0.3.0  # RealESRGAN brings in GFPGAN as a requirement
-# -e git+https://github.com/xinntao/Real-ESRGAN.git#egg=realesrgan
--e git+https://github.com/devilismyfriend/latent-diffusion#egg=latent-diffusion  #ldsr
+git+https://github.com/CompVis/latent-diffusion
 
 ## for monocular depth estimation 
 tensorflow==2.10.0
 
 
 # Orphaned Packages:  No usage found
+
