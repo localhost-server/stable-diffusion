@@ -18,8 +18,8 @@
 #import streamlit as st
 import os
 import torch
-os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
-device = torch.device("cuda:1")
+os.environ["CUDA_VISIBLE_DEVICES"] = "1,0"
+device = "cuda"#torch.device("cuda:1")
 # We import hydralit like this to replace the previous stuff
 # we had with native streamlit as it lets ur replace things 1:1
 #import hydralit as st 
