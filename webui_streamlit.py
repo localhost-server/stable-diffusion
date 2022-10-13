@@ -17,8 +17,9 @@
 # base webui import and utils.
 #import streamlit as st
 import os
+import torch
 os.environ["CUDA_VISIBLE_DEVICES"] = "1"
-device = "cuda"
+device = torch.device("cuda:1")
 # We import hydralit like this to replace the previous stuff
 # we had with native streamlit as it lets ur replace things 1:1
 #import hydralit as st 
