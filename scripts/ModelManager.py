@@ -92,23 +92,3 @@ def layout():
                     st.empty()
             else:
                 st.write('✅')
-
-        modelloc="models/custom/model-pruned.ckpt"
-        modelloc1="models/custom/WaifuDiffusion-V1.3.ckpt"
-
-        if os.path.exists(modelloc):
-            os.remove(modelloc)
-        else:
-            pass
-        
-        if st.button("reset"):
-            if os.path.exists('configs/webui/userconfig_streamlit.yaml'):
-                os.remove('configs/webui/userconfig_streamlit.yaml')
-
-        else:
-            pass
-        
-        if os.path.exists("models/custom/WaifuDiffusion-v1.3.ckpt"):
-            os.rename(modelloc1,"models/custom/WaifuDiffusion-v1.3.ckpt")
-        else:
-            pass
