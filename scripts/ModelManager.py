@@ -104,8 +104,9 @@ def layout():
     if st.button("reset"):
         if os.path.exists("configs\webui\userconfig_streamlit.yaml"):
             os.remove("configs\webui\userconfig_streamlit.yaml")
-        else:
-            pass
+            
+    else:
+        pass
     
     if os.path.exists("models/custom/WaifuDiffusion-v1.3.ckpt"):
         os.rename(modelloc1,"models/custom/WaifuDiffusion-v1.3.ckpt")
