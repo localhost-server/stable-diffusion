@@ -680,7 +680,7 @@ def layout():
 			if os.path.exists(location):
 				pass
 			else:
-				os.mkdir(location)
+				os.makedirs(location)
 			mp4files=[i for i in os.listdir(location) if ".mp4" in i]
 			
 			for i in mp4files:
