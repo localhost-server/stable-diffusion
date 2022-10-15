@@ -683,20 +683,6 @@ def layout():
 				os.mkdir(location)
 			mp4files=[i for i in os.listdir(location) if ".mp4" in i]
 			
-			if os.path.exists(f"{location}3073147001_blonde-lady-smiling.mp4"):
-				os.remove(f"{location}3073147001_blonde-lady-smiling.mp4")
-			else :
-				pass
-			if os.path.exists(f"{location}783991866_lamborghini-car.mp4"):
-				os.remove(f"{location}783991866_lamborghini-car.mp4")
-			else:
-				pass
-			if os.path.exists(f"{location}382493004_blonde-lady-smiling-with-red-shining-hair.mp4"):
-				os.remove(f"{location}382493004_blonde-lady-smiling-with-red-shining-hair.mp4")
-			else:
-				pass
-			
-			
 			for i in mp4files:
 				st.write(i[:-4])
 				video_file = open(f"{location}{i}", 'rb')
