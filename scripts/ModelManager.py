@@ -102,9 +102,9 @@ def layout():
         pass
     
     if st.button("reset"):
-        if os.path.exists("configs\webui\userconfig_streamlit.yaml"):
-            os.remove("configs\webui\userconfig_streamlit.yaml")
-            
+        if os.path.exists('configs/webui/userconfig_streamlit.yaml'):
+            os.remove('configs/webui/userconfig_streamlit.yaml')
+
     else:
         pass
     
