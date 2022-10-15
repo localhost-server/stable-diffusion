@@ -98,7 +98,6 @@ def layout():
             os.remove('configs/webui/userconfig_streamlit.yaml')
             import shutil
             shutil.rmtree('outputs/')
-        
     else:
         pass
     
