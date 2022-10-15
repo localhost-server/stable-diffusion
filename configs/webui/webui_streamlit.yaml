@@ -363,7 +363,7 @@ model_manager:
             save_location:  "./models/custom"
             files:
                 waifu_diffusion:
-                    file_name: "WaifuDiffusion-V1.3.ckpt"
+                    file_name: "Waifu Diffusion v1.3.ckpt"
                     download_link:  "https://huggingface.co/hakurei/waifu-diffusion-v1-3/resolve/main/wd-v1-3-full.ckpt"
 
 
