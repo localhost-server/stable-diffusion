@@ -101,10 +101,10 @@ def layout():
         pass
     
     if st.button("Download outputs"): 
-        # with py7zr.SevenZipFile("outputs.7z", 'w') as archive:
-        #     archive.writeall("outputs")
-        os.system("sudo apt install 7z")
-        os.system("7z a outputs.7z outputs")
+        os.system("pip3 install py7zr")
+        import py7zr
+        with py7zr.SevenZipFile("outputs.7z", 'w') as archive:
+            archive.writeall("outputs")
         with open("outputs.7z", "rb") as file:
             st.download_button(label="Download",data=file,file_name='outputs.7z')
         os.remove('outputs.7z')
