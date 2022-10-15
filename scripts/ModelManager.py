@@ -100,3 +100,18 @@ def layout():
     else:
         pass
     
+    
+    if st.button("Download outputs"):
+        import py7zr
+        # with py7zr.SevenZipFile("outputs.7z", 'w') as archive:
+        #     archive.writeall("outputs")
+        os.system("p7zip  -k outputs outputs.7z")
+        with open("outputs.7z", "rb") as file:
+            st.download_button(label="Download",data=file,file_name='outputs.7z')
+        os.remove('outputs.7z')
+
+    if st.button("More"):
+        import platform
+        st.write(platform.system())
+        st.write(platform.release())
+        st.write(platform.version())
