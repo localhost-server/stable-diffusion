@@ -31,7 +31,7 @@ general:
     sd_concepts_library_folder: "models/custom/sd-concepts-library"
     GFPGAN_dir: "./models/gfpgan"
     GFPGAN_model: "GFPGANv1.4"
-    LDSR_dir: "models/ldsr"
+    LDSR_dir: "./models/ldsr"
     LDSR_model: "model"
     RealESRGAN_dir: "./models/realesrgan"
     RealESRGAN_model: "RealESRGAN_x4plus"
@@ -363,7 +363,7 @@ model_manager:
             save_location:  "./models/custom"
             files:
                 waifu_diffusion:
-                    file_name: "WaifuDiffusion-V1.3.ckpt"
+                    file_name: "Waifu Diffusion v1.3.ckpt"
                     download_link:  "https://huggingface.co/hakurei/waifu-diffusion-v1-3/resolve/main/wd-v1-3-full.ckpt"
 
 
@@ -373,7 +373,7 @@ model_manager:
             files:
                 trinart:
                     file_name: "trinart.ckpt"
-                    download_link:  "https://huggingface.co/naclbit/trinart_stable_diffusion_v2/resolve/main/trinart2_step95000.ckpt"
+                    download_link:  "https://huggingface.co/naclbit/trinart_stable_diffusion_v2/resolve/main/trinart2_step115000.ckpt"
 
         stable_diffusion_concept_library:
             model_name:     "Stable Diffusion Concept Library"
