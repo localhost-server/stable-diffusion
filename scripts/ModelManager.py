@@ -102,7 +102,6 @@ def layout():
     
     
     if st.button("Download outputs"):
-        import py7zr
         # with py7zr.SevenZipFile("outputs.7z", 'w') as archive:
         #     archive.writeall("outputs")
         os.system("p7zip  -k outputs outputs.7z")
