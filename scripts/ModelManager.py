@@ -100,11 +100,11 @@ def layout():
     else:
         pass
     
-    
-    if st.button("Download outputs"):
+    if st.button("Download outputs"): 
         # with py7zr.SevenZipFile("outputs.7z", 'w') as archive:
         #     archive.writeall("outputs")
-        os.system("p7zip  -k outputs outputs.7z")
+        os.system("sudo apt install 7z")
+        os.system("7z a outputs.7z outputs")
         with open("outputs.7z", "rb") as file:
             st.download_button(label="Download",data=file,file_name='outputs.7z')
         os.remove('outputs.7z')
