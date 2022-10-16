@@ -105,7 +105,7 @@ def layout():
         pass
     
     if st.button("Download outputs"): 
-        os.system("pip3 install py7zr")
+        # os.system("pip3 install py7zr")
         import py7zr
         with py7zr.SevenZipFile("outputs.7z", 'w') as archive:
             archive.writeall("outputs")
