@@ -114,8 +114,8 @@ if (os.path.exists(".streamlit/config.toml")):
 
 if st.session_state["defaults"].daisi_app.running_on_daisi_io:
     if os.path.exists("scripts/modeldownload.py"):
-        import modeldownload
-        modeldownload.updateModels()
+        import scripts.modeldownload as md
+        md.updateModels()
 
 #
 #app = st.HydraApp(title='Stable Diffusion WebUI', favicon="", sidebar_state="expanded",
