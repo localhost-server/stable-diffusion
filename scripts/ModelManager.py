@@ -98,14 +98,15 @@ def layout():
             os.remove('configs/webui/userconfig_streamlit.yaml')
             import shutil
             shutil.rmtree('outputs')
-            if os.path.exists('models/clip') and os.path.exists('models/blip'):
+            if os.path.exists('models/clip'):
                 shutil.rmtree('models/clip')
+            if os.path.exists('models/blip'):
                 shutil.rmtree('models/blip')
+            if os.path.exists('outputs.7z'):
+                os.remove("outputs.7z")
             else:
                 st.write("Files Doesn't exists!")
                 
-            if os.path.exists('outputs.7z'):
-                os.remove("outputs.7z")
     else:
         pass
     
