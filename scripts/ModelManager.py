@@ -100,8 +100,6 @@ def layout():
             shutil.rmtree('outputs/')
             if os.path.exists('models/clip'):
                 shutil.rmtree('models/clip/')
-            if os.path.exists('models/custom/model__base_caption.pth'):
-                os.remove('models/custom/model__base_caption.pth')  
             if os.path.exists('outputs.7z'):
                 os.remove("outputs.7z")
         os.system("pip3 cache purge")
