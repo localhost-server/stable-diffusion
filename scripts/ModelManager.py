@@ -98,8 +98,6 @@ def layout():
             os.remove('configs/webui/userconfig_streamlit.yaml')
             import shutil
             shutil.rmtree('outputs/')
-            shutil.rmtree("~/.cache/huggingface/transformers")
-            shutil.rmtree("~/.cache/torch/transformers")
             if os.path.exists('outputs.7z'):
                 os.remove("outputs.7z")
         os.system("pip3 cache purge")
