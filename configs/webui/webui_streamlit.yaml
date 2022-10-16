@@ -41,7 +41,7 @@ general:
     gfpgan_cpu: False
     esrgan_cpu: False
     extra_models_cpu: False
-    extra_models_gpu: False
+    extra_models_gpu: True
     gfpgan_gpu: 0
     esrgan_gpu: 0
     save_metadata: True
