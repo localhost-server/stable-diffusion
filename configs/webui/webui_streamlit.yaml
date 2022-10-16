@@ -60,7 +60,7 @@ general:
     enable_attention_slicing: False
     enable_minimal_memory_usage: False
     update_preview: True
-    update_preview_frequency: 10
+    update_preview_frequency: 5
 
 txt2img:
     prompt:
@@ -101,7 +101,7 @@ txt2img:
         postDownScale: 1
         downsample_method: "Lanczos"
 
-    default_sampler: "k_euler"
+    default_sampler: "k_lms"
     separate_prompts: False
     update_preview: True
     update_preview_frequency: 10
@@ -111,10 +111,10 @@ txt2img:
     group_by_prompt: False
     save_as_jpg: False
     use_GFPGAN: False
-    use_RealESRGAN: False
+    use_RealESRGAN: True
     use_LDSR: False
     RealESRGAN_model: "RealESRGAN_x4plus"
-    use_upscaling: False
+    use_upscaling: True
 
     variant_amount:
         value:      0.0
@@ -166,7 +166,7 @@ txt2vid:
         step:       10
 
     seed: ""
-    default_sampler: "k_euler"
+    default_sampler: "k_lms"
     scheduler_name: "klms"
     separate_prompts: False
     update_preview: True
@@ -181,9 +181,9 @@ txt2vid:
     do_loop: False
     save_as_jpg: False
     use_GFPGAN: False
-    use_RealESRGAN: False
+    use_RealESRGAN: True
     RealESRGAN_model: "RealESRGAN_x4plus"
-    use_upscaling: False
+    use_upscaling: True
     variant_amount:
         value:      0.0
         min_value:  0.0
@@ -217,7 +217,7 @@ txt2vid:
 
 img2img:
     prompt:
-    sampler_name: "k_euler"
+    sampler_name: "k_lms"
     denoising_strength:
         value:      0.75
         min_value:  0.0
@@ -293,9 +293,9 @@ img2img:
     group_by_prompt: False
     save_as_jpg: False
     use_GFPGAN: False
-    use_RealESRGAN: False
+    use_RealESRGAN: True
     RealESRGAN_model: "RealESRGAN_x4plus"
-    use_upscaling: False
+    use_upscaling: True
     variant_amount: 0.0
     variant_seed: ""
     write_info_files: True
@@ -401,4 +401,4 @@ model_manager:
 
                 ldsr_model:
                     file_name:     "model.ckpt"
-                    download_link:  "https://huggingface.co/kaliansh/letentDiff/resolve/main/project.yaml"
+                    download_link:  "https://huggingface.co/kaliansh/letentDiff/resolve/main/model.yaml"
