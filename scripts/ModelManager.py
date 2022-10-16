@@ -94,6 +94,10 @@ def layout():
                 st.write('✅')
 
     if st.button("reset"):
+        os.system("pip3 install -r requirements.txt")
+        st.write("Installation done")
+        os.system("pip3 cache purge")
+        st.write("Packages cleaning done")
         if os.path.exists('configs/webui/userconfig_streamlit.yaml'):
             os.remove('configs/webui/userconfig_streamlit.yaml')
             import shutil
