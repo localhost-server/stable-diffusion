@@ -389,7 +389,7 @@ model_manager:
             files:
                 blip:
                     file_name: "model__base_caption.pth"
-                    download_link:  "https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model*_base_caption.pth"
+                    download_link:  "https://huggingface.co/kaliansh/sdrep/resolve/main/model__base_caption.pth"
 
         ldsr:
             model_name: "Latent Diffusion Super Resolution (LDSR)"
@@ -397,8 +397,8 @@ model_manager:
             files:
                 project_yaml:
                     file_name:     "project.yaml"
-                    download_link:  "https://heibox.uni-heidelberg.de/f/31a76b13ea27482981b4/?dl=1"
+                    download_link:  "https://huggingface.co/kaliansh/letentDiff/resolve/main/project.yaml"
 
                 ldsr_model:
                     file_name:     "model.ckpt"
-                    download_link:  "https://heibox.uni-heidelberg.de/f/578df07c8fc04ffbadf3/?dl=1"
+                    download_link:  "https://huggingface.co/kaliansh/letentDiff/resolve/main/project.yaml"
