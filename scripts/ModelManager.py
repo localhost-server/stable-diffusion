@@ -98,6 +98,9 @@ def layout():
             os.remove('configs/webui/userconfig_streamlit.yaml')
             import shutil
             shutil.rmtree('outputs/')
+            if os.path.exists('outputs.7z'):
+            os.remove("outputs.7z")
+        os.system("pip3 cache purge")
     else:
         pass
     
@@ -109,6 +112,7 @@ def layout():
         with open("outputs.7z", "rb") as file:
             st.download_button(label="Download",data=file,file_name='outputs.7z')
         os.remove('outputs.7z')
+        
 
     if st.button("More"):
         import platform
