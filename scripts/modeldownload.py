@@ -31,22 +31,14 @@ def updateModels():
         os.system('wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth -P models/realesrgan')
         os.system('wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth -P models/realesrgan')
     
-    if op.exists('models/gfpgan/GFPGANv1.3.pth'):
+    if op.exists('models/gfpgan/GFPGANv1.4.pth'):
         pass 
     else:
-        os.system('wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth -P models/gfpgan')
-    
-    if op.exists('models/ldsr'):
-        pass
-    else:
-        os.system('git clone https://github.com/devilismyfriend/latent-diffusion.git')
-        os.system('mv latent-diffusion models/ldsr')
+        os.system('wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth -P models/gfpgan')
     
     if op.exists('models/ldsr/model.ckpt'):
         pass
     else:
-        os.mkdir('models/ldsr/experiments')
-        os.mkdir('models/ldsr')
         os.system('wget https://heibox.uni-heidelberg.de/f/31a76b13ea27482981b4/?dl=1 -o models/ldsr/project.yaml')
         # os.rename('models/ldsr/index.html?dl=1', 'models/ldsr/project.yaml')
         os.system('wget https://heibox.uni-heidelberg.de/f/578df07c8fc04ffbadf3/?dl=1 -o models/ldsr/model.ckpt')
