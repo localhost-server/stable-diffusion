@@ -99,7 +99,7 @@ def layout():
             import shutil
             shutil.rmtree('outputs/')
             if os.path.exists('outputs.7z'):
-            os.remove("outputs.7z")
+                os.remove("outputs.7z")
         os.system("pip3 cache purge")
     else:
         pass
