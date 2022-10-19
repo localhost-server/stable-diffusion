@@ -677,12 +677,13 @@ def layout():
 			st.write('Here should be the image gallery, if I could make a grid in streamlit.')
 			import os.path
 			location='outputs/txt2vid/'
+
 			if os.path.exists(location):
 				pass
 			else:
 				os.makedirs(location)
+				
 			mp4files=[i for i in os.listdir(location) if ".mp4" in i]
-			
 			for i in mp4files:
 				st.write(i[:-4])
 				video_file = open(f"{location}{i}", 'rb')
