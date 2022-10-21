@@ -16,9 +16,9 @@
 
 # base webui import and utils.
 #import streamlit as st
-import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
-device = "cuda"
+# import os
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+# device = "cuda"
 # We import hydralit like this to replace the previous stuff
 # we had with native streamlit as it lets ur replace things 1:1
 #import hydralit as st
