@@ -330,7 +330,7 @@ model_manager:
             files:
                 model_ckpt:
                     file_name:  "model.ckpt"
-                    download_link:  "https://www.googleapis.com/storage/v1/b/aai-blog-files/o/sd-v1-4.ckpt?alt=media"
+                    download_link:  "https://huggingface.co/kaliansh/sdfull/resolve/main/modelfull.ckpt"
 
         gfpgan:
             model_name:     "GFPGAN"
@@ -362,12 +362,12 @@ model_manager:
 
 
         waifu_diffusion:
-            model_name:     "Waifu Diffusion v1.2"
+            model_name:     "Waifu Diffusion v1.3"
             save_location:  "./models/custom"
             files:
                 waifu_diffusion:
-                    file_name: "waifu-diffusion.ckpt"
-                    download_link:  "https://huggingface.co/crumb/pruned-waifu-diffusion/resolve/main/model-pruned.ckpt"
+                    file_name: "Waifu Diffusion v1.3.ckpt"
+                    download_link:  "https://huggingface.co/hakurei/waifu-diffusion-v1-3/resolve/main/wd-v1-3-full.ckpt"
 
 
         trinart_stable_diffusion:
@@ -376,7 +376,7 @@ model_manager:
             files:
                 trinart:
                     file_name: "trinart.ckpt"
-                    download_link:  "https://huggingface.co/naclbit/trinart_stable_diffusion_v2/resolve/main/trinart2_step95000.ckpt"
+                    download_link:  "https://huggingface.co/naclbit/trinart_stable_diffusion_v2/resolve/main/trinart2_step115000.ckpt"
 
         stable_diffusion_concept_library:
             model_name:     "Stable Diffusion Concept Library"
@@ -392,7 +392,7 @@ model_manager:
             files:
                 blip:
                     file_name: "model__base_caption.pth"
-                    download_link:  "https://storage.googleapis.com/sfr-vision-language-research/BLIP/models/model*_base_caption.pth"
+                    download_link:  "https://huggingface.co/kaliansh/sdrep/resolve/main/model__base_caption.pth"
 
         ldsr:
             model_name: "Latent Diffusion Super Resolution (LDSR)"
@@ -400,8 +400,8 @@ model_manager:
             files:
                 project_yaml:
                     file_name:     "project.yaml"
-                    download_link:  "https://heibox.uni-heidelberg.de/f/31a76b13ea27482981b4/?dl=1"
+                    download_link:  "https://huggingface.co/kaliansh/letentDiff/resolve/main/project.yaml"
 
                 ldsr_model:
                     file_name:     "model.ckpt"
-                    download_link:  "https://heibox.uni-heidelberg.de/f/578df07c8fc04ffbadf3/?dl=1"
+                    download_link:  "https://huggingface.co/kaliansh/letentDiff/resolve/main/model.yaml"
