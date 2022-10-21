@@ -1,2 +1,4 @@
 from subprocess import call
-call(["streamlit","run","scripts/webui_streamlit.py"])
+import os
+
+call(["python","scripts/webui_streamlit.py"])
