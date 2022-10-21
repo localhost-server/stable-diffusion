@@ -70,7 +70,7 @@ from typing import Dict
 from io import BytesIO
 from packaging import version
 #import librosa
-from logger import logger, set_logger_verbosity, quiesce_logger
+from scripts.logger import logger, set_logger_verbosity, quiesce_logger
 #from loguru import logger
 
 # Temp imports
