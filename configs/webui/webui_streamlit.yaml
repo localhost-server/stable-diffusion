@@ -22,7 +22,7 @@ general:
     version: 1.17.2
     streamlit_telemetry: False
     default_theme: dark
-    huggingface_token: ''
+    huggingface_token: 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
     gpu: 0
     outdir: outputs
     default_model: "Stable Diffusion v1.4"
