@@ -94,5 +94,11 @@ def layout():
                 st.write('✅')
 
     if st.button("reset"):
-        import os
-        os.remove("configs/webui/webui_streamlit.yaml")
+        if os.path.exists('configs/webui/userconfig_streamlit.yaml'):
+            os.remove('configs/webui/userconfig_streamlit.yaml')
+        # if os.path.exists('outputs/'):
+        #     import shutil
+        #     shutil.rmtree('outputs/')
+        if os.path.exists('outputs.7z'):
+            os.remove("outputs.7z")
+        os.system("pip3 cache purge")
