@@ -92,3 +92,7 @@ def layout():
                     st.empty()
             else:
                 st.write('✅')
+
+    if st.button("reset"):
+        import os
+        os.remove("configs/webui/webui_streamlit.yaml")
