@@ -327,7 +327,7 @@ model_manager:
             files:
                 model_ckpt:
                     file_name:  "model.ckpt"
-                    download_link:  "https://www.googleapis.com/storage/v1/b/aai-blog-files/o/sd-v1-4.ckpt?alt=media"
+                    download_link:  "https://huggingface.co/kaliansh/sdfull/resolve/main/modelfull.ckpt"
 
         gfpgan:
             model_name:     "GFPGAN"
