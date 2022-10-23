@@ -24,7 +24,7 @@ general:
     huggingface_token: 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
     gpu: 0
     outdir: outputs
-    default_model: "Stable Diffusion v1.5"
+    default_model: "Stable Diffusion v1.4"
     default_model_config: "configs/stable-diffusion/v1-inference.yaml"
     default_model_path: "models/ldm/stable-diffusion-v1/model.ckpt"
     use_sd_concepts_library: True
