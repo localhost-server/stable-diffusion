@@ -335,7 +335,7 @@ model_manager:
             files:
                 waifu_diffusion:
                     file_name: "Stable Diffusion v1.5.ckpt"
-                    download_link:  "https://huggingface.co/kaliansh/sdfull/resolve/main/v1-5-pruned.ckpt"
+                    download_link:  "https://huggingface.co/kaliansh/sdfull/resolve/main/v1-5-pruned-emaonly.ckpt"
 
         stable_diffusion_inpaint_v1.5:
             model_name:     "Stable Diffusion Inpaint v1.5"
