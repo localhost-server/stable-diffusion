@@ -100,14 +100,17 @@ def layout():
         st.write("Packages cleaning done")
         if os.path.exists('configs/webui/userconfig_streamlit.yaml'):
             os.remove('configs/webui/userconfig_streamlit.yaml')
-            import shutil
-            shutil.rmtree('outputs')
-            if os.path.exists('models/clip'):
-                shutil.rmtree('models/clip')
-            if os.path.exists('outputs.7z'):
-                os.remove("outputs.7z")
-            else:
-                st.write("Files Doesn't exists!")
+        import shutil
+        shutil.rmtree('outputs')
+        if os.path.exists('models/clip'):
+            shutil.rmtree('models/clip')
+        # if os.path.exists('outputs.7z'):
+        #     os.remove("outputs.7z")
+        if os.path.exists('models/custom/Stable Diffusion v1.5.ckpt'):
+            os.remove("models/custom/Stable Diffusion v1.5.ckpt")
+        
+        else:
+            st.write("Files Doesn't exists!")
                 
     else:
         pass
