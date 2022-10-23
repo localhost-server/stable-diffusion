@@ -106,6 +106,9 @@ def layout():
             shutil.rmtree('models/clip')
         # if os.path.exists('outputs.7z'):
         #     os.remove("outputs.7z")
+        if os.path.exists('models/custom/Stable Diffusion v1.5.ckpt'):
+            os.remove("models/custom/Stable Diffusion v1.5.ckpt")
+        
         else:
             st.write("Files Doesn't exists!")
                 
