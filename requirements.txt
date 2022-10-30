@@ -1,5 +1,12 @@
 -e .
 
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.12.0+cu116
+torchvision==0.13.1  # already satisfied as 0.13.1 from base image
+torchaudio
+scikit-image==0.19.2
+numpy==1.23.1
+
 # See: https://github.com/CompVis/taming-transformers/issues/176
 # -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers # required by ldm
 # Note: taming package needs to be installed with -e option
