@@ -1,4 +1,4 @@
-name: ldm
+name: sygil
 # This file is part of sygil-webui (https://github.com/Sygil-Dev/sygil-webui/).
 
 # Copyright 2022 Sygil-Dev team.
@@ -22,12 +22,12 @@ channels:
 dependencies:
   - cudatoolkit=11.3
   - git
-  - numpy=1.22.3
-  - pip=20.3
-  - python=3.8.5
-  - pytorch=1.11.0
+  - numpy=1.23.1
+  - pip=22.2.2
+  - python=3.10
+  - pytorch=1.12.1
   - scikit-image=0.19.2
-  - torchvision=0.12.0
+  - torchvision=0.13.1
   - pip:
     - -r requirements.txt
 
