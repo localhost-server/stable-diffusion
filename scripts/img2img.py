@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 # base webui import and utils.
-from sd_utils import *
+from scripts.sd_utils import *
 
 # streamlit imports
 from streamlit import StopException
@@ -32,7 +32,7 @@ from ldm.models.diffusion.ddim import DDIMSampler
 from ldm.models.diffusion.plms import PLMSSampler
 
 # streamlit components
-from custom_components import sygil_suggestions
+from scripts.custom_components import sygil_suggestions
 from streamlit_drawable_canvas import st_canvas
 
 # Temp imports
