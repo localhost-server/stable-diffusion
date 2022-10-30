@@ -21,7 +21,7 @@ https://github.com/nateraw/stable-diffusion-videos
 repo and the original gist script from
 https://gist.github.com/karpathy/00103b0037c5aaea32fe1da1af553355
 """
-from sd_utils import *
+from scripts.sd_utils import *
 
 # streamlit imports
 from streamlit import StopException
@@ -64,7 +64,7 @@ from torchvision.io import write_video
 
 
 # streamlit components
-from custom_components import sygil_suggestions
+from scripts.custom_components import sygil_suggestions
 
 # Temp imports
 
