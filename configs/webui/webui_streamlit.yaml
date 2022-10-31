@@ -331,7 +331,7 @@ model_manager:
             files:
                 model_ckpt:
                     file_name:  "Stable Diffusion v1.5.ckpt"
-                    download_link:  "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
+                    download_link:  "https://huggingface.co/kaliansh/sdfull/resolve/main/v1-5-pruned-emaonly.ckpt"
 
         gfpgan:
             model_name:     "GFPGAN"
@@ -377,7 +377,7 @@ model_manager:
             files:
                 trinart:
                     file_name: "trinart.ckpt"
-                    download_link:  "https://huggingface.co/naclbit/trinart_stable_diffusion_v2/resolve/main/trinart2_step95000.ckpt"
+                    download_link:  "https://huggingface.co/naclbit/trinart_stable_diffusion_v2/resolve/main/trinart2_step115000.ckpt"
 
         sd_wd_ld_trinart_merged:
             model_name:     "SD1.5-WD1.3-LD-Trinart-Merged"
