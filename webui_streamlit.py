@@ -16,7 +16,7 @@
 
 # base webui import and utils.
 #import streamlit as st
-
+import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 device = "cuda"#torch.device("cuda:1")
 
